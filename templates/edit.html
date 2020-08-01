@@ -1,0 +1,22 @@
+{% extends 'components/base.html' %}
+{% block content %}
+<div class="container mt-4" style="background-color: #e3f2fd; padding-top: 15px; padding-bottom: 15px; max-width: 500px;">
+<form action="/edit" method="POST">
+    <section class="section">
+        <h1 class="h2 text-center">Delete Patient</h1>
+        <div class="field">
+            <label class="label">Patient ID</label>
+            <div class="control">
+                <input class="input" type="number" name="id"
+                    placeholder="Enter Patient ID" />
+            </div>
+        </div>
+        <div class="field text-center">
+            <div class="control is-centered">
+                <input type="submit" class="btn btn-primary" value="Delete" />
+            </div>
+        </div>
+    </section>
+</form>
+</div>
+{% endblock %}
